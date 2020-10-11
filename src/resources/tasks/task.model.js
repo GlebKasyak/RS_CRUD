@@ -1,6 +1,6 @@
-const uuid = require("uuid");
+const uuid = require('uuid');
 
-const { checkRequiredFields } = require("../../common/helpers");
+const { checkRequiredFields } = require('../../common/helpers');
 
 class Task {
   constructor({
@@ -10,7 +10,7 @@ class Task {
     description,
     userId = null,
     boardId,
-    columnId = null,
+    columnId = null
   }) {
     this.id = id;
     this.title = title;
@@ -19,32 +19,38 @@ class Task {
     this.userId = userId;
     this.boardId = boardId;
     this.columnId = columnId;
-  };
+  }
 
   static create(data) {
-    const canBeCreated = checkRequiredFields(data, ["title", "description", "boardId"]);
+    const canBeCreated = checkRequiredFields(data, [
+      'title',
+      'description',
+      'boardId'
+    ]);
 
-    if(canBeCreated && !Array.isArray(canBeCreated)) {
+    if (canBeCreated && !Array.isArray(canBeCreated)) {
       return new Task(data);
-    } else {
-      throw new Error(`Error! You missed required fields: ${ canBeCreated.join(", ") }.`)
     }
-  };
+    throw new Error(
+      `Error! You missed required fields: ${canBeCreated.join(', ')}.`
+    );
+  }
 
   static delete(tasks, idName, idValue) {
+    // eslint-disable-next-line default-case
     switch (idName) {
-      case "userId":
+      case 'userId':
         return tasks.map(entity => {
-          if(entity[idName] === idValue) {
+          if (entity[idName] === idValue) {
             return {
               ...entity,
-              [idName]: null,
-            }
+              [idName]: null
+            };
           }
           return entity;
         });
-      case "boardId":
-        return tasks.filter(task => task.boardId !== idValue)
+      case 'boardId':
+        return tasks.filter(task => task.boardId !== idValue);
     }
   }
 }
