@@ -8,7 +8,7 @@
 ## Downloading
 
 ```
-git clone {repository URL}
+git clone https://github.com/GlebKasyak/RS_CRUD.git
 ```
 
 ## Installing NPM modules
