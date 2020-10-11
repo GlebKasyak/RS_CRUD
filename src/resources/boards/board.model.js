@@ -2,28 +2,26 @@ const uuid = require("uuid");
 
 const { checkRequiredFields } = require("../../common/helpers");
 
-class User {
+class Board {
   constructor({
     id = uuid(),
-    name,
-    login,
-    password
+    title,
+    columns = [],
   }) {
     this.id = id;
-    this.name = name;
-    this.login = login;
-    this.password = password;
+    this.title = title;
+    this.columns = columns.map(column => ({ ...column, id: uuid() }));
   };
 
   static create(data) {
-    const canBeCreated = checkRequiredFields(data, ["name", "login", "password"]);
+    const canBeCreated = checkRequiredFields(data, ["title"]);
 
     if(canBeCreated && !Array.isArray(canBeCreated)) {
-      return new User(data);
+      return new Board(data);
     } else {
       throw new Error(`Error! You missed required fields: ${ canBeCreated.join(", ") }.`)
     }
   };
 }
 
-module.exports = User;
+module.exports = Board;
