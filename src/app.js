@@ -3,8 +3,8 @@ const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
 
-const rootRouter = require("./resources/rootRouter");
-const { errorHandler } = require("./common/errorHandler");
+const rootRouter = require('./resources/rootRouter');
+const { errorHandler } = require('./common/errorHandler');
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
