@@ -15,37 +15,9 @@ const Models = { User, Board, Task };
 
 class DB {
   constructor() {
-    this.users = [
-      {
-        id: 'd45f2d25-7737-4e2a-9ec5-258aadd4f8d5',
-        name: 'string',
-        login: 'string'
-      }
-    ];
-    this.boards = [
-      {
-        id: 'fbe75b41-3bae-4c35-8d65-4bad72fb335c',
-        title: 'string',
-        columns: [
-          {
-            title: 'string',
-            order: 0,
-            id: '9a13b191-87ff-4081-904e-e0fca0ae2c9b'
-          }
-        ]
-      }
-    ];
-    this.tasks = [
-      {
-        id: '2a0c7769-a508-42d7-8f26-2bace8cd3b92',
-        title: 'string',
-        order: 0,
-        description: 'string',
-        userId: 'd45f2d25-7737-4e2a-9ec5-258aadd4f8d5',
-        boardId: 'fbe75b41-3bae-4c35-8d65-4bad72fb335c',
-        columnId: 'string'
-      }
-    ];
+    this.users = [];
+    this.boards = [];
+    this.tasks = [];
   }
 
   create(Model, data, relationshipObj, fields) {
