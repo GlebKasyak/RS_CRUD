@@ -1,13 +1,15 @@
 const { Router } = require('express');
 
 const TaskController = require('./task.controller');
+const { loggerMiddleware } = require('../../middleware/logger/logger');
 
 const router = Router();
+const logger = loggerMiddleware('TaskController');
 
-router.get('/:boardId/tasks', TaskController.getAllTasks);
-router.post('/:boardId/tasks', TaskController.addTask);
-router.get('/:boardId/tasks/:id', TaskController.getTaskByIds);
-router.put('/:boardId/tasks/:id', TaskController.updateTaskByIds);
-router.delete('/:boardId/tasks/:id', TaskController.deleteTaskByIds);
+router.get('/:boardId/tasks', logger, TaskController.getAllTasks);
+router.post('/:boardId/tasks', logger, TaskController.addTask);
+router.get('/:boardId/tasks/:id', logger, TaskController.getTaskByIds);
+router.put('/:boardId/tasks/:id', logger, TaskController.updateTaskByIds);
+router.delete('/:boardId/tasks/:id', logger, TaskController.deleteTaskByIds);
 
 module.exports = router;

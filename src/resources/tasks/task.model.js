@@ -37,7 +37,6 @@ class Task {
   }
 
   static delete(tasks, idName, idValue) {
-    // eslint-disable-next-line default-case
     switch (idName) {
       case 'userId':
         return tasks.map(entity => {
@@ -51,6 +50,8 @@ class Task {
         });
       case 'boardId':
         return tasks.filter(task => task.boardId !== idValue);
+      default:
+        break;
     }
   }
 }
