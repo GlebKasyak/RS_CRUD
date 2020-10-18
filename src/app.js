@@ -4,7 +4,8 @@ const path = require('path');
 const YAML = require('yamljs');
 
 const rootRouter = require('./resources/rootRouter');
-const { errorHandler } = require('./common/errorHandler');
+const { errorHandler } = require('./common/error/errorHandler');
+const processError = require('./common/error/processError');
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -22,5 +23,6 @@ app.use('/', (req, res, next) => {
 
 rootRouter(app);
 errorHandler(app);
+processError();
 
 module.exports = app;

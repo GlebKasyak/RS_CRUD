@@ -1,6 +1,7 @@
 const {
   getObjectWithChosenFields,
-  getObjectWithCutoutFields
+  getObjectWithCutoutFields,
+  reduceObjToString
 } = require('./helpers');
 
 /**
@@ -36,6 +37,19 @@ const select = (data, fields) => {
   }
 };
 
+const throwErrorsByEntityIds = (ids, entityName) => {
+  if (typeof ids === 'object') {
+    const params = reduceObjToString(ids);
+
+    throw new Error(
+      `Error! ${entityName} with params: ${params} doesn't exists`
+    );
+  } else {
+    throw new Error(`Error! ${entityName} with id = ${ids} doesn't exists`);
+  }
+};
+
 module.exports = {
-  select
+  select,
+  throwErrorsByEntityIds
 };
