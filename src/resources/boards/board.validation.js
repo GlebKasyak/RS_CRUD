@@ -1,4 +1,5 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
 
 const boardValidationScheme = {
   newBoard: Joi.object()
@@ -17,7 +18,7 @@ const boardValidationScheme = {
       )
     }),
   boardId: Joi.object({
-    boardId: Joi.string().required()
+    boardId: Joi.objectId().required()
   })
 };
 

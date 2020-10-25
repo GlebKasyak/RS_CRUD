@@ -32,17 +32,17 @@ const taskValidationScheme = {
       description: Joi.string()
         .min(5)
         .trim(),
-      id: Joi.string(),
+      id: Joi.objectId(),
       userId: Joi.objectId().allow(null),
       boardId: Joi.objectId().allow(null),
       columnId: Joi.objectId().allow(null)
     }),
   boardId: Joi.object({
-    boardId: Joi.string().required()
+    boardId: Joi.objectId().required()
   }),
   ids: Joi.object({
-    boardId: Joi.string().required(),
-    id: Joi.string().required()
+    boardId: Joi.objectId().required(),
+    id: Joi.objectId().required()
   })
 };
 
