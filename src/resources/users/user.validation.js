@@ -1,4 +1,5 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
 
 const userValidationScheme = {
   newUser: Joi.object()
@@ -33,10 +34,10 @@ const userValidationScheme = {
       password: Joi.string()
         .min(4)
         .trim(),
-      id: Joi.string()
+      id: Joi.objectId()
     }),
   userId: Joi.object({
-    userId: Joi.string().required()
+    userId: Joi.objectId().required()
   })
 };
 

@@ -33,25 +33,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76933e1f-f17c-4417-b433-09c7dbf55502" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/logger/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/logger/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger/logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/boards/board.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/boards/board.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/boards/board.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/users/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/users/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/users/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +171,7 @@
       <workItem from="1603016500947" duration="2416000" />
       <workItem from="1603294295427" duration="176000" />
       <workItem from="1603526446405" duration="6120000" />
-      <workItem from="1603615136321" duration="25946000" />
+      <workItem from="1603615136321" duration="26751000" />
     </task>
     <servers />
   </component>
