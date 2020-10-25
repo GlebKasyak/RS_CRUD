@@ -33,28 +33,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76933e1f-f17c-4417-b433-09c7dbf55502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/error/processError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/error/errorHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/boards/board.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/logger/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/logger/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger/logger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/boards/board.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/boards/board.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/boards/board.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/boards/board.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/users/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/tasks/task.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/tasks/task.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/users/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/users/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/users/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,12 +77,102 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources/tasks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\nodeJs_projects\RS_course\Новая папка\RS_CRUD\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\nodeJs_projects\RS_course\Новая папка\RS_CRUD\src\resources\tasks" />
+      <recent name="D:\nodeJs_projects\RS_course\Новая папка\RS_CRUD\src\resources\boards" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Tasks suite">
+    <configuration name="Boards suite" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/e2e/test/boards.test.js" />
+      <test-names>
+        <test-name value="Boards suite" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tasks suite" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/e2e/test/tasks.test.js" />
+      <test-names>
+        <test-name value="Tasks suite" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Users suite" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/e2e/test/users.test.js" />
+      <test-names>
+        <test-name value="Users suite" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Users suite.PUT" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/e2e/test/users.test.js" />
+      <test-names>
+        <test-name value="Users suite" />
+        <test-name value="PUT" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Users suite.PUT.should update user successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/e2e/test/users.test.js" />
+      <test-names>
+        <test-name value="Users suite" />
+        <test-name value="PUT" />
+        <test-name value="should update user successfully" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Tasks suite" />
+        <item itemvalue="Jest.Boards suite" />
+        <item itemvalue="Jest.Users suite" />
+        <item itemvalue="Jest.Users suite.PUT.should update user successfully" />
+        <item itemvalue="Jest.Users suite.PUT" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,6 +184,11 @@
       <updated>1603012272429</updated>
       <workItem from="1603012274609" duration="155000" />
       <workItem from="1603012792872" duration="1955000" />
+      <workItem from="1603016275929" duration="155000" />
+      <workItem from="1603016500947" duration="2416000" />
+      <workItem from="1603294295427" duration="176000" />
+      <workItem from="1603526446405" duration="6120000" />
+      <workItem from="1603615136321" duration="25946000" />
     </task>
     <servers />
   </component>
@@ -101,15 +205,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="351" y="222" width="945" height="457" key="#Log_Highlighting_(ideolog)" timestamp="1603014035166">
+    <state x="351" y="222" width="945" height="457" key="#Log_Highlighting_(ideolog)" timestamp="1603615606048">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="351" y="222" width="945" height="457" key="#Log_Highlighting_(ideolog)/0.43.1536.821@0.43.1536.821" timestamp="1603014035166" />
+    <state x="351" y="222" width="945" height="457" key="#Log_Highlighting_(ideolog)/0.43.1536.821@0.43.1536.821" timestamp="1603615606048" />
     <state x="223" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603012421374">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="223" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.43.1536.821@0.43.1536.821" timestamp="1603012421374" />
+    <state width="1515" height="264" key="GridCell.Tab.0.bottom" timestamp="1603660788003">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="264" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1603660788003" />
+    <state width="1515" height="264" key="GridCell.Tab.0.center" timestamp="1603660788003">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="264" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1603660788003" />
+    <state width="1515" height="264" key="GridCell.Tab.0.left" timestamp="1603660788002">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="264" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1603660788002" />
+    <state width="1515" height="264" key="GridCell.Tab.0.right" timestamp="1603660788003">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="264" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1603660788003" />
+    <state x="222" y="166" width="1018" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603530377424">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="222" y="166" width="1018" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.43.1536.821@0.43.1536.821" timestamp="1603530377424" />
   </component>
 </project>

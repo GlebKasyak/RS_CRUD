@@ -1,24 +1,35 @@
-const uuid = require('uuid');
+const { Schema, model } = require('mongoose');
 
-const { checkRequiredFields } = require('../../common/helpers');
+const Task = require('../tasks/task.model');
 
-class Board {
-  constructor({ id = uuid(), title, columns = [] }) {
-    this.id = id;
-    this.title = title;
-    this.columns = columns.map(column => ({ ...column, id: uuid() }));
+const BoardSchema = new Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+      trim: true,
+      minLength: 5
+    },
+    columns: [
+      {
+        title: {
+          type: String,
+          trim: true
+        },
+        order: {
+          type: Number
+        }
+      }
+    ]
+  },
+  {
+    versionKey: false
   }
+);
 
-  static create(data) {
-    const canBeCreated = checkRequiredFields(data, ['title']);
+BoardSchema.post('remove', async board => {
+  await Task.deleteMany({ boardId: board._id });
+});
 
-    if (canBeCreated && !Array.isArray(canBeCreated)) {
-      return new Board(data);
-    }
-    throw new Error(
-      `Error! You missed required fields: ${canBeCreated.join(', ')}.`
-    );
-  }
-}
-
+const Board = model('Board', BoardSchema);
 module.exports = Board;

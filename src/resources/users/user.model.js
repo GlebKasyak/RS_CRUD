@@ -1,29 +1,36 @@
-const uuid = require('uuid');
+const { Schema, model } = require('mongoose');
 
-const { checkRequiredFields } = require('../../common/helpers');
+const Task = require('../tasks/task.model');
 
-class User {
-  constructor({ id = uuid(), name, login, password }) {
-    this.id = id;
-    this.name = name;
-    this.login = login;
-    this.password = password;
-  }
-
-  static create(data) {
-    const canBeCreated = checkRequiredFields(data, [
-      'name',
-      'login',
-      'password'
-    ]);
-
-    if (canBeCreated && !Array.isArray(canBeCreated)) {
-      return new User(data);
+const UserSchema = new Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      trim: true,
+      minLength: 4
+    },
+    login: {
+      type: String,
+      required: true,
+      trim: true,
+      minLength: 4
+    },
+    password: {
+      type: String,
+      required: true,
+      trim: true,
+      minLength: 4
     }
-    throw new Error(
-      `Error! You missed required fields: ${canBeCreated.join(', ')}.`
-    );
+  },
+  {
+    versionKey: false
   }
-}
+);
 
+UserSchema.post('remove', async user => {
+  await Task.updateMany({ userId: user._id }, { userId: null });
+});
+
+const User = model('User', UserSchema);
 module.exports = User;
