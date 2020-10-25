@@ -1,59 +1,44 @@
-const uuid = require('uuid');
+const { Schema, model, Types } = require('mongoose');
 
-const { checkRequiredFields } = require('../../common/helpers');
-
-class Task {
-  constructor({
-    id = uuid(),
-    title,
-    order = 0,
-    description,
-    userId = null,
-    boardId,
-    columnId = null
-  }) {
-    this.id = id;
-    this.title = title;
-    this.order = order;
-    this.description = description;
-    this.userId = userId;
-    this.boardId = boardId;
-    this.columnId = columnId;
-  }
-
-  static create(data) {
-    const canBeCreated = checkRequiredFields(data, [
-      'title',
-      'description',
-      'boardId'
-    ]);
-
-    if (canBeCreated && !Array.isArray(canBeCreated)) {
-      return new Task(data);
+const TaskSchema = new Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+      trim: true,
+      minLength: 5
+    },
+    order: {
+      type: Number,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true,
+      trim: true,
+      minLength: 5
+    },
+    userId: {
+      type: Types.ObjectId,
+      ref: 'User',
+      default: null
+    },
+    boardId: {
+      type: Types.ObjectId,
+      ref: 'Board',
+      required: true
+    },
+    columnId: {
+      type: Types.ObjectId,
+      ref: 'Column',
+      default: null
     }
-    throw new Error(
-      `Error! You missed required fields: ${canBeCreated.join(', ')}.`
-    );
+  },
+  {
+    versionKey: false
   }
+);
 
-  static delete(tasks, idName, idValue) {
-    switch (idName) {
-      case 'userId':
-        return tasks.map(entity => {
-          if (entity[idName] === idValue) {
-            return {
-              ...entity,
-              [idName]: null
-            };
-          }
-          return entity;
-        });
-      case 'boardId':
-        return tasks.filter(task => task.boardId !== idValue);
-      default:
-        break;
-    }
-  }
-}
+const Task = model('Task', TaskSchema);
 
 module.exports = Task;

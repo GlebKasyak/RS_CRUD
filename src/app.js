@@ -3,6 +3,7 @@ const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
 
+const connectToDB = require('./common/db');
 const rootRouter = require('./resources/rootRouter');
 const { errorHandler } = require('./common/error/errorHandler');
 const processError = require('./common/error/processError');
@@ -21,6 +22,7 @@ app.use('/', (req, res, next) => {
   next();
 });
 
+connectToDB();
 rootRouter(app);
 errorHandler(app);
 processError();

@@ -80,7 +80,7 @@ class LoggerService {
 const logger = new LoggerService();
 
 const loggerMiddleware = module => (req, res, next) => {
-  const service = req.route.stack[1].name;
+  const service = req.route.stack[req.route.stack.length - 1].name;
   let data = {
     url: req.baseUrl + req.route.path,
     method: req.method,
