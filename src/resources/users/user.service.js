@@ -40,6 +40,11 @@ class UserService {
     if (!user) throw new Error(`Error: user with id: ${userId} doesn't exists`);
     await user.remove();
   }
+
+  static async login({ login, password }) {
+    const user = await User.findByCredentials(login, password);
+    return await user.generateAuthToken();
+  }
 }
 
 module.exports = UserService;
