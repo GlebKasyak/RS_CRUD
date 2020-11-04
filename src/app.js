@@ -22,9 +22,9 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-connectToDB();
 rootRouter(app);
 errorHandler(app);
 processError();
+connectToDB();
 
 module.exports = app;

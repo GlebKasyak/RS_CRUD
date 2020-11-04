@@ -1,4 +1,10 @@
-const { OK, NO_CONTENT, BAD_REQUEST, NOT_FOUND } = require('http-status-codes');
+const {
+  OK,
+  NO_CONTENT,
+  BAD_REQUEST,
+  NOT_FOUND,
+  FORBIDDEN
+} = require('http-status-codes');
 
 const UserService = require('./user.service');
 const { ErrorHandler } = require('../../common/error/errorHandler');
@@ -46,6 +52,15 @@ class UserController {
       res.status(NO_CONTENT).send(null);
     } catch (err) {
       return next(new ErrorHandler(NOT_FOUND, err.message));
+    }
+  }
+
+  static async login(req, res, next) {
+    try {
+      const token = await UserService.login(req.body);
+      res.status(OK).send({ token });
+    } catch (err) {
+      return next(new ErrorHandler(FORBIDDEN, err.message));
     }
   }
 }

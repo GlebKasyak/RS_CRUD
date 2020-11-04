@@ -38,7 +38,20 @@ const userValidationScheme = {
     }),
   userId: Joi.object({
     userId: Joi.objectId().required()
-  })
+  }),
+  login: Joi.object()
+    .options({ abortEarly: false, allowUnknown: false })
+    .keys({
+      login: Joi.string()
+        .min(4)
+        .trim()
+        .required(),
+
+      password: Joi.string()
+        .min(4)
+        .trim()
+        .required()
+    })
 };
 
 module.exports = userValidationScheme;

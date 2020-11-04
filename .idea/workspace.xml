@@ -34,7 +34,15 @@
   <component name="ChangeListManager">
     <list default="true" id="76933e1f-f17c-4417-b433-09c7dbf55502" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/logger/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/rootRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/rootRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/users/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/users/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/users/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/users/user.validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,20 +126,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Users suite.PUT" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/test/e2e/test/users.test.js" />
-      <test-names>
-        <test-name value="Users suite" />
-        <test-name value="PUT" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Users suite.PUT.should update user successfully" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -147,13 +141,23 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="test:auth" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:auth" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.Tasks suite" />
+        <item itemvalue="npm.test:auth" />
         <item itemvalue="Jest.Boards suite" />
         <item itemvalue="Jest.Users suite" />
         <item itemvalue="Jest.Users suite.PUT.should update user successfully" />
-        <item itemvalue="Jest.Users suite.PUT" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +175,12 @@
       <workItem from="1603016500947" duration="2416000" />
       <workItem from="1603294295427" duration="176000" />
       <workItem from="1603526446405" duration="6120000" />
-      <workItem from="1603615136321" duration="26751000" />
+      <workItem from="1603615136321" duration="27032000" />
+      <workItem from="1604238956595" duration="7369000" />
+      <workItem from="1604247420041" duration="2797000" />
+      <workItem from="1604302919283" duration="192000" />
+      <workItem from="1604323802532" duration="1258000" />
+      <workItem from="1604325203926" duration="305000" />
     </task>
     <servers />
   </component>
@@ -199,22 +208,22 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="223" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.43.1536.821@0.43.1536.821" timestamp="1603012421374" />
-    <state width="1515" height="264" key="GridCell.Tab.0.bottom" timestamp="1603660788003">
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom" timestamp="1604249653287">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="264" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1603660788003" />
-    <state width="1515" height="264" key="GridCell.Tab.0.center" timestamp="1603660788003">
+    <state width="1515" height="234" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1604249653287" />
+    <state width="1515" height="234" key="GridCell.Tab.0.center" timestamp="1604249653286">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="264" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1603660788003" />
-    <state width="1515" height="264" key="GridCell.Tab.0.left" timestamp="1603660788002">
+    <state width="1515" height="234" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1604249653286" />
+    <state width="1515" height="234" key="GridCell.Tab.0.left" timestamp="1604249653286">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="264" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1603660788002" />
-    <state width="1515" height="264" key="GridCell.Tab.0.right" timestamp="1603660788003">
+    <state width="1515" height="234" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1604249653286" />
+    <state width="1515" height="234" key="GridCell.Tab.0.right" timestamp="1604249653287">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="264" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1603660788003" />
+    <state width="1515" height="234" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1604249653287" />
     <state x="222" y="166" width="1018" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603530377424">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
