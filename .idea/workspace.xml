@@ -34,15 +34,10 @@
   <component name="ChangeListManager">
     <list default="true" id="76933e1f-f17c-4417-b433-09c7dbf55502" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/logger/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/logger/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/rootRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/rootRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/users/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/users/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/users/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/users/user.validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/users/user.validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +175,8 @@
       <workItem from="1604247420041" duration="2797000" />
       <workItem from="1604302919283" duration="192000" />
       <workItem from="1604323802532" duration="1258000" />
-      <workItem from="1604325203926" duration="305000" />
+      <workItem from="1604325203926" duration="962000" />
+      <workItem from="1604824922394" duration="1012000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,167 @@
+[32m[INFO][39m  - 2020-11-08 11:42:36  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.057ms[39m
+[32m[INFO][39m  - 2020-11-08 11:42:41  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-02.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.006ms[39m
+[31m[ERROR][39m  - 2020-11-08 11:45:15  [33m[ErrorHandler][39m [31m{"message":"Authorization header is absent","statusCode":401}[39m [33m+0.004ms[39m
+[32m[INFO][39m  - 2020-11-08 11:46:46  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.041ms[39m
+[32m[INFO][39m  - 2020-11-08 11:46:54  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-02.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.004ms[39m
+[32m[INFO][39m  - 2020-11-08 11:47:11  [33m[UserController][39m [32maddUser {"url":"/users/","method":"POST","body":{"name":"admin","login":"admin","password":"admin"}} route[39m [33m+0.003ms[39m
+[32m[INFO][39m  - 2020-11-08 11:47:45  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "string",
+      "login": "string",
+      "password": "string"
+   }
+} route[39m [33m+0.004ms[39m
+[32m[INFO][39m  - 2020-11-08 11:49:38  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.074ms[39m
+[32m[INFO][39m  - 2020-11-08 11:49:42  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "string",
+      "login": "string",
+      "password": "string"
+   }
+} route[39m [33m+0.016ms[39m
+[32m[INFO][39m  - 2020-11-08 11:49:49  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-00.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.004ms[39m
+[32m[INFO][39m  - 2020-11-08 11:52:06  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.144ms[39m
+[32m[INFO][39m  - 2020-11-08 11:52:13  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-01.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.005ms[39m
+[32m[INFO][39m  - 2020-11-08 11:52:22  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "string",
+      "login": "string",
+      "password": "string"
+   }
+} route[39m [33m+0.006ms[39m
+[32m[INFO][39m  - 2020-11-08 11:52:45  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.069ms[39m
+[32m[INFO][39m  - 2020-11-08 11:52:54  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-02.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.005ms[39m
+[32m[INFO][39m  - 2020-11-08 11:55:22  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.041ms[39m
+[32m[INFO][39m  - 2020-11-08 11:55:24  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-01.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.005ms[39m
+[32m[INFO][39m  - 2020-11-08 11:55:35  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "string",
+      "login": "string",
+      "password": "string"
+   }
+} route[39m [33m+0.003ms[39m
+[32m[INFO][39m  - 2020-11-08 11:58:49  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.061ms[39m
+[32m[INFO][39m  - 2020-11-08 11:58:51  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-02.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.007ms[39m
+[32m[INFO][39m  - 2020-11-08 12:00:20  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.046ms[39m
+[32m[INFO][39m  - 2020-11-08 12:00:22  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-02.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.007ms[39m
+[32m[INFO][39m  - 2020-11-08 12:00:35  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "11",
+      "login": "22",
+      "password": "33"
+   }
+} route[39m [33m+0.004ms[39m
+[31m[ERROR][39m  - 2020-11-08 12:00:35  [33m[Validator][39m [31m{
+  "message": {
+    "errors": [
+      {
+        "path": [
+          "name"
+        ],
+        "message": "\"name\" length must be at least 4 characters long"
+      },
+      {
+        "path": [
+          "login"
+        ],
+        "message": "\"login\" length must be at least 4 characters long"
+      },
+      {
+        "path": [
+          "password"
+        ],
+        "message": "\"password\" length must be at least 4 characters long"
+      }
+    ]
+  },
+  "status": 422
+}[39m [33m+0.004ms[39m
+[32m[INFO][39m  - 2020-11-08 12:00:46  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "111111",
+      "login": "222222",
+      "password": "333333"
+   }
+} route[39m [33m+0.004ms[39m
+[31m[ERROR][39m  - 2020-11-08 12:00:46  [33m[ErrorHandler][39m [31m{"message":"user.save is not a function","statusCode":400}[39m [33m+0.006ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:04  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.043ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:06  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-02.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.004ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:23  [33m[UserController][39m [32mupdateUser {
+   "url": "/users/:userId",
+   "method": "PUT",
+   "params": {
+      "userId": "5fa7b08fa1ce512ca0e0255f"
+   },
+   "body": {
+      "name": "111111",
+      "login": "222222",
+      "password": "333333"
+   }
+} route[39m [33m+0.006ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:40  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.074ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:41  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-00.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.005ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:43  [33m[ExpressApplication][39m [32mApp is running on http://localhost:4000[39m [33m+0.1ms[39m
+[32m[INFO][39m  - 2020-11-08 12:03:45  [33m[MongoDBConnection][39m [32mConnected to:
+         host: rs-crud-cluster-shard-00-00.wr2jo.mongodb.net,
+         port: 27017,
+         name: <dbname>[39m [33m+0.004ms[39m

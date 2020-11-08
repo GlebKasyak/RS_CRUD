@@ -28,9 +28,11 @@ class UserService {
   }
 
   static async updateUser(data, userId) {
-    const user = await User.findByIdAndUpdate(userId, data, {
-      new: true
-    });
+    const user = await User.findById(userId);
+    user.name = data.name;
+    user.login = data.login;
+    user.password = data.password;
+    await user.save();
     if (!user) throw new Error('Error! user data not changed');
     return this._toResponse(user);
   }
